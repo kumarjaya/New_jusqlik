@@ -1,0 +1,16 @@
+PODS:
+  - KWVerificationCodeView (0.4.0)
+
+DEPENDENCIES:
+  - KWVerificationCodeView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KWVerificationCodeView
+
+SPEC CHECKSUMS:
+  KWVerificationCodeView: 92cca6ad028546d3232fa75cda3a40d00109a1a2
+
+PODFILE CHECKSUM: d42a1df18be24d95c71af626878a1d40dc29e702
+
+COCOAPODS: 1.7.5
