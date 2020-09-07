@@ -7,16 +7,35 @@
 //
 
 import UIKit
+import KWVerificationCodeView
 
 class OtpViewController: UIViewController {
 
+    @IBOutlet weak var otpView: KWVerificationCodeView!
+    
+    @IBOutlet weak var verifyBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        verifyBtn.layer.cornerRadius = 5
+        verifyBtn.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func verifyOtpView(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PasswordViewController") as! PasswordViewController
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+        
+    }
+    
+    @IBAction func resentOtnBtnAction(_ sender: Any) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 

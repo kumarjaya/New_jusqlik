@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -78,6 +78,9 @@
 		63CBC67025054AFC009717F9 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBC66F25054AFC009717F9 /* OtpViewController.swift */; };
 		63CBC67225054B12009717F9 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBC67125054B12009717F9 /* PasswordViewController.swift */; };
 		63CBC67425054B4F009717F9 /* KycProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBC67325054B4F009717F9 /* KycProcessViewController.swift */; };
+		63CBC678250556F2009717F9 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBC677250556F2009717F9 /* UserViewController.swift */; };
+		63CBC67A25055706009717F9 /* UserOtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBC67925055706009717F9 /* UserOtpViewController.swift */; };
+		63CBC67C25055717009717F9 /* UserPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBC67B25055717009717F9 /* UserPasswordViewController.swift */; };
 		83CAFDB063EE098C90F3D893 /* Pods_jusqlik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D38BE2DCAB4C019A72E7D9 /* Pods_jusqlik.framework */; };
 		DCEACA35F3F50FBC27F2A109 /* Pods_jusqlikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F5447A9EE66E6436833BF3 /* Pods_jusqlikUITests.framework */; };
 /* End PBXBuildFile section */
@@ -143,6 +146,9 @@
 		63CBC66F25054AFC009717F9 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
 		63CBC67125054B12009717F9 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		63CBC67325054B4F009717F9 /* KycProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KycProcessViewController.swift; sourceTree = "<group>"; };
+		63CBC677250556F2009717F9 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		63CBC67925055706009717F9 /* UserOtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOtpViewController.swift; sourceTree = "<group>"; };
+		63CBC67B25055717009717F9 /* UserPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPasswordViewController.swift; sourceTree = "<group>"; };
 		7175BD17CC7D39E762CCB950 /* Pods-jusqlikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jusqlikUITests.release.xcconfig"; path = "Target Support Files/Pods-jusqlikUITests/Pods-jusqlikUITests.release.xcconfig"; sourceTree = "<group>"; };
 		781F8C5ADD0EE638F20E5B6D /* Pods-jusqlik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jusqlik.release.xcconfig"; path = "Target Support Files/Pods-jusqlik/Pods-jusqlik.release.xcconfig"; sourceTree = "<group>"; };
 		EA42C2764FDCC7A0A709ABA3 /* Pods-jusqlikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jusqlikTests.release.xcconfig"; path = "Target Support Files/Pods-jusqlikTests/Pods-jusqlikTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,7 +193,6 @@
 				07697B2DE7D744540BA3C6F8 /* Pods-jusqlikUITests.debug.xcconfig */,
 				7175BD17CC7D39E762CCB950 /* Pods-jusqlikUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -229,6 +234,7 @@
 				63CBC5EB2504E924009717F9 /* AppDelegate.swift */,
 				63CBC5ED2504E924009717F9 /* SceneDelegate.swift */,
 				63CBC5EF2504E924009717F9 /* ViewController.swift */,
+				63CBC676250556A1009717F9 /* JQ User */,
 				63CBC61E2504EBAB009717F9 /* Poppins */,
 				63CBC67525054B72009717F9 /* JQ SP */,
 				63CBC5F12504E924009717F9 /* Main.storyboard */,
@@ -293,6 +299,16 @@
 				63CBC67325054B4F009717F9 /* KycProcessViewController.swift */,
 			);
 			path = "JQ SP";
+			sourceTree = "<group>";
+		};
+		63CBC676250556A1009717F9 /* JQ User */ = {
+			isa = PBXGroup;
+			children = (
+				63CBC677250556F2009717F9 /* UserViewController.swift */,
+				63CBC67925055706009717F9 /* UserOtpViewController.swift */,
+				63CBC67B25055717009717F9 /* UserPasswordViewController.swift */,
+			);
+			path = "JQ User";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,9 +590,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				63CBC5F02504E924009717F9 /* ViewController.swift in Sources */,
+				63CBC678250556F2009717F9 /* UserViewController.swift in Sources */,
 				63CBC5EC2504E924009717F9 /* AppDelegate.swift in Sources */,
+				63CBC67A25055706009717F9 /* UserOtpViewController.swift in Sources */,
 				63CBC67025054AFC009717F9 /* OtpViewController.swift in Sources */,
 				63CBC67225054B12009717F9 /* PasswordViewController.swift in Sources */,
+				63CBC67C25055717009717F9 /* UserPasswordViewController.swift in Sources */,
 				63CBC5EE2504E924009717F9 /* SceneDelegate.swift in Sources */,
 				63CBC66E25054AE9009717F9 /* LoginViewController.swift in Sources */,
 				63CBC67425054B4F009717F9 /* KycProcessViewController.swift in Sources */,

@@ -10,10 +10,27 @@ import UIKit
 
 class PasswordViewController: UIViewController {
 
+    @IBOutlet weak var passwordField: UITextField!
+    
+    @IBOutlet weak var conPassword: UITextField!
+    
+    @IBOutlet weak var signUpBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        signUpBtn.layer.cornerRadius = 5
+        signUpBtn.layer.masksToBounds = true
+        
+        passwordField.addBottomBorder()
+        conPassword.addBottomBorder()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func signBtnAction(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+               let nextViewController = storyBoard.instantiateViewController(withIdentifier: "KycProcessViewController") as! KycProcessViewController
+         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
 

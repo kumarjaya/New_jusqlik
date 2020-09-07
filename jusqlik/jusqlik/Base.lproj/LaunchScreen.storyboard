@@ -15,12 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="yVz-6a-iVe">
-                                <rect key="frame" x="113" y="384" width="110" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jsp" translatesAutoresizingMaskIntoConstraints="NO" id="yVz-6a-iVe">
+                                <rect key="frame" x="0.0" y="291" width="414" height="266"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yVz-6a-iVe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="247" id="Mty-0Y-gvO"/>
+                            <constraint firstItem="yVz-6a-iVe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lg9-0x-G4b"/>
+                            <constraint firstItem="yVz-6a-iVe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qTQ-U3-RYH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yVz-6a-iVe" secondAttribute="bottom" constant="305" id="qxJ-wN-RJS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1024" width="341" height="341"/>
+        <image name="jsp" width="256" height="256"/>
     </resources>
 </document>
